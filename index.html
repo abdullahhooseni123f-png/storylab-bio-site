@@ -3,90 +3,176 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TrendNest</title>
+
+  <title>TrendNest | Beauty & Skincare Finds</title>
+
   <style>
-    body{
-      margin:0;
-      font-family:Arial,sans-serif;
-      background:#f6f1eb;
-      color:#1f1a17;
-      display:flex;
-      justify-content:center;
-      padding:40px 16px;
+    * {
+      box-sizing: border-box;
     }
-    .wrap{
-      width:100%;
-      max-width:520px;
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 40px 16px;
+      display: flex;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background: #f7f1ea;
+      color: #241f1a;
     }
-    .card{
-      background:#fffaf5;
-      border:1px solid #e7ddd2;
-      border-radius:20px;
-      padding:28px;
-      box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    .page {
+      width: 100%;
+      max-width: 520px;
     }
-    h1{
-      margin:0 0 10px;
-      font-size:36px;
+
+    .card {
+      padding: 32px 24px;
+      background: #fffaf6;
+      border: 1px solid #e8ddd2;
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(45, 32, 22, 0.08);
     }
-    p{
-      color:#6b625c;
-      line-height:1.6;
+
+    h1 {
+      margin: 0;
+      font-size: 38px;
+      letter-spacing: -1px;
     }
-    .links a, .product a{
-      display:block;
-      text-decoration:none;
-      background:#111;
-      color:#fff;
-      padding:14px 18px;
-      border-radius:14px;
-      margin-top:12px;
-      text-align:center;
+
+    .intro {
+      margin: 10px 0 26px;
+      line-height: 1.6;
+      color: #72675e;
     }
-    .section-title{
-      margin-top:28px;
-      margin-bottom:10px;
-      font-size:14px;
-      text-transform:uppercase;
-      letter-spacing:.08em;
-      color:#8a7f75;
+
+    .label {
+      margin: 28px 0 10px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #8a7e74;
+      text-transform: uppercase;
     }
-    .product{
-      background:#fff;
-      border:1px solid #eee1d5;
-      border-radius:16px;
-      padding:18px;
-      margin-top:14px;
+
+    .button {
+      display: block;
+      width: 100%;
+      margin-top: 12px;
+      padding: 15px 18px;
+      border-radius: 14px;
+      background: #27211d;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
     }
-    .product h3{
-      margin:0 0 8px;
-      font-size:20px;
+
+    .button:hover {
+      background: #4b3b31;
     }
-    .product p{
-      margin:0 0 12px;
+
+    .product {
+      margin-top: 12px;
+      padding: 20px;
+      border: 1px solid #eadfd5;
+      border-radius: 16px;
+      background: #ffffff;
+    }
+
+    .product h2 {
+      margin: 0 0 8px;
+      font-size: 21px;
+    }
+
+    .product p {
+      margin: 0 0 16px;
+      line-height: 1.55;
+      color: #72675e;
+    }
+
+    .amazon {
+      background: #8b5e3c;
+    }
+
+    .amazon:hover {
+      background: #6f472c;
+    }
+
+    .footer {
+      margin: 22px 0 0;
+      color: #958a81;
+      font-size: 13px;
+      text-align: center;
     }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="card">
+  <main class="page">
+    <section class="card">
+
       <h1>TrendNest</h1>
-      <p>Curated skincare finds, beauty picks, and trend-led favorites.</p>
 
-      <div class="section-title">My links</div>
-      <div class="links">
-        <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">TikTok</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">Pinterest</a>
-      </div>
+      <p class="intro">
+        Curated skincare finds, beauty picks, and trend-led favorites.
+      </p>
 
-      <div class="section-title">Featured product</div>
-      <div class="product">
-        <h3>Hydrating Skincare Pick</h3>
-        <p>Gentle, clean, and selected for daily glow-focused routines.</p>
-        <a href="#" target="_blank" rel="noopener noreferrer">AVAILABLE ON AMAZON ✓</a>
-      </div>
-    </div>
-  </div>
+      <p class="label">Follow TrendNest</p>
+
+      <a
+        class="button"
+        href="https://www.instagram.com/trendnest046/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
+      <a
+        class="button"
+        href="https://www.tiktok.com/@trendnest046"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        TikTok
+      </a>
+
+      <a
+        class="button"
+        href="https://se.pinterest.com/TrendNest046/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Pinterest
+      </a>
+
+      <p class="label">Featured product</p>
+
+      <article class="product">
+        <h2>Hydrating Skincare Pick</h2>
+
+        <p>
+          A glow-focused skincare find selected for a gentle daily routine.
+        </p>
+
+        <a
+          class="button amazon"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          AVAILABLE ON AMAZON ✓
+        </a>
+      </article>
+
+      <p class="footer">
+        TrendNest · Beauty finds worth saving
+      </p>
+
+    </section>
+  </main>
 </body>
 </html>
